@@ -1,6 +1,5 @@
 ---
-## install python 
-hosts: all
+- hosts: all
   remote_user: ubuntu
   become: true
   gather_facts: no
