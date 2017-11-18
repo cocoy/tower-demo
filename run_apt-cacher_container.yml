@@ -7,7 +7,7 @@
   tasks:  
     - name: Clone tower-base into configured directory.
       git:
-        repo: https://github.com/mejs123/tower-base.git
+        repo: https://github.com/cocoy/tower-demo.git
         dest: "/home/ubuntu/tower-base"
         force: yes
 
