@@ -2,4 +2,6 @@
 - src: geerlingguy.git
 - src: geerlingguy.docker
 - src: geerlingguy.pip
+- src: geerlingguy.ansible
 - src: rfhayashi.ansible-container
+
