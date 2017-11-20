@@ -13,7 +13,12 @@ Assume we have ang Ansible Tower running, we use this repo as Project on Tower i
       What it does is to create an apt-cacher-ng inside a Docker Host. It means or target host here would be the hostname/IP of docker host above.
         The playbook is run_apt-cacher_container.yml
 
-       This will run apt-cacher-ng on port 3142 of the docker host. 
+      2.1.  You have to run first the setup_docker_volume.yml 
+
+      2.2.  Now you can run the run_apt_cacher_container.yml 
+
+      This will run apt-cacher-ng on port 3142 of the docker host. The volume stored on the docker_host, thus apt_cacher_volume can be shared with docker instances. 
+    
 	  
    3. Another playbook that will install apt-cacher-ng-client to target client hosts defined on new set of inventory file, to be apt-cacher client.
       Parameter on AWX Tower -> Templates -> Extra Variables: 
