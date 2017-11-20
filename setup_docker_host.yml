@@ -5,7 +5,7 @@
   gather_facts: no
     
   pre_tasks:
-     raw: apt install python python-apt
+     - raw: apt install python python-apt
      #- name: 'install python2'
      #  apt:
      #    name: python
