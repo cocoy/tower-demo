@@ -19,4 +19,5 @@
 
   roles:
     - { role: geerlingguy.docker }
+    - { role: geerlingguy.ansible }
     - { role: rfhayashi.ansible-container }
