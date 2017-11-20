@@ -17,7 +17,12 @@
   become: true
   become_method: sudo
 
+  vars:
+     pip_install_packages:
+      - name: docker-py
+
   roles:
     - { role: geerlingguy.docker }
+    - { role: geerlingguy.pip}
     - { role: geerlingguy.ansible }
     - { role: rfhayashi.ansible-container }
