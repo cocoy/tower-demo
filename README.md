@@ -23,9 +23,9 @@ Assume we have ang Ansible Tower running, we use this repo as Project on Tower i
    3. Another playbook that will install apt-cacher-ng-client to target client hosts defined on new set of inventory file, to be apt-cacher client.
       Parameter on AWX Tower -> Templates -> Extra Variables: 
 
-		site_url: http://apt.example.com:3142/
+		site_url: "apt.example.com:3142"
 
-      Where: apt.example.com can be IP or dns of your apt-cacher-ng server.
+      Where: apt.example.com can be IP or dns of your apt-cacher-ng server and port.
 
 ## References:
 
