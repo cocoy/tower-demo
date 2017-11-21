@@ -27,6 +27,10 @@ Assume we have ang Ansible Tower running, we use this repo as Project on Tower i
 
       Where: apt.example.com can be IP or dns of your apt-cacher-ng server.
 
+## References:
+
+Use for the documentation:
+https://galaxy.ansible.com/juju4/ansible-apt-cacher-ng-client/
 
 ## Author Information
 
