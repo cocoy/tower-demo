@@ -21,7 +21,13 @@
         chdir: "/home/ubuntu/tower-base/containers"
 
     - name: Run ansible-container playbook
-      command: "ansible-container build"
+      command: "ansible-container destroy"
+      args:
+        chdir: "/home/ubuntu/tower-base/containers"
+      ignore_errors: yes 
+
+    - name: Run ansible-container playbook
+      command: "ansible-container build --no-container-cache"
       args:
         chdir: "/home/ubuntu/tower-base/containers"
 
