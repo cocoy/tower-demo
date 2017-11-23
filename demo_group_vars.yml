@@ -1,0 +1,11 @@
+---
+- hosts: all
+  remote_user: ubuntu
+  become: true
+
+  vars_files:
+     - "group_vars/all/main.yml"
+
+  tasks:
+    - debug:
+      msg: "Group Variable {{ group_variable_one }} 
