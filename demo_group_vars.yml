@@ -7,4 +7,6 @@
      - "group_vars/all/main.yml"
 
   tasks:
-    - debug: "Group Variable {{ group_variable_one }}"
+    - debug: 
+        var: group_variable_one 
+        verbosity: 2
