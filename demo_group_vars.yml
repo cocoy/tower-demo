@@ -7,5 +7,4 @@
      - "group_vars/all/main.yml"
 
   tasks:
-    - debug:
-      var: "Group Variable {{ group_variable_one }}"
+    - debug: "Group Variable {{ group_variable_one }}"
