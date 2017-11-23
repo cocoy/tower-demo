@@ -4,7 +4,7 @@
 
 Assume we have ang Ansible Tower running, we use this repo as Project on Tower in order to load the demo playbooks.
 
-## Contents of this repo is
+## Contents of this Repo: 
    1.  Setup the Docker host, it can be defined on the Tower Inventory setting the target IP/hostname to be our Docker Host. 
        After which set on template to run the playbook setup_docker_host.yml 
        The Docker hosts the Docker containers . 
@@ -26,6 +26,12 @@ Assume we have ang Ansible Tower running, we use this repo as Project on Tower i
 		site_url: "apt.example.com:3142"
 
       Where: apt.example.com can be IP or dns of your apt-cacher-ng server and port.
+
+   4. Group variables and inventory can be run inside the Ansible Tower by specifying the source on the Inventory. It will read the inventories plus the group_vars.
+
+      4.1 We can setup Tower template to run the playbook demo_group_vars.yml
+
+ 
 
 ## References:
 
